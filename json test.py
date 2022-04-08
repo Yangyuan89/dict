@@ -21,5 +21,5 @@ fp.close()
 
 with open('temp.json', 'r',encoding='utf-8') as f:
     for item in jsonlines.Reader(f):
-
-        print(item)
+        print(item['headWord'])
+        print(str(item['content']['word']['content']).split('sCn')[1])
