@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+word_items.json#!/usr/bin/python3
 # -*- coding: UTF-8 -*- 
 
 # SETP3 : 导出md的表格
