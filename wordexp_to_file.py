@@ -7,7 +7,7 @@ import jsonlines
 
 word = []
 with open('1.json', 'r',encoding='utf-8') as f:
-    word_file = open("四级英语词汇导出.xlsx", 'w', encoding='UTF-8')
+    word_file = open("四级英语词汇导出.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词
@@ -16,12 +16,13 @@ with open('1.json', 'r',encoding='utf-8') as f:
         word_file.write('\t')
         #输出音标
         if(len(item['phonetic_list'])==4):
-         print(item['phonetic_list'][0]+item['phonetic_list'][1]+'  '+item['phonetic_list'][2]+item['phonetic_list'][3])
-         word_file.write(item['phonetic_list'][0]+item['phonetic_list'][1]+'  '+item['phonetic_list'][2]+item['phonetic_list'][3])
+         #print(item['phonetic_list'][0]+item['phonetic_list'][1]+'  '+item['phonetic_list'][2]+item['phonetic_list'][3])
+         #word_file.write(item['phonetic_list'][0]+item['phonetic_list'][1]+'  '+item['phonetic_list'][2]+item['phonetic_list'][3])
+         word_file.write(item['phonetic_list'][3])
          word_file.write('\t')
         elif (len(item['phonetic_list']) == 2):
-            print(item['phonetic_list'][0] + item['phonetic_list'][1])
-            word_file.write(item['phonetic_list'][0] + item['phonetic_list'][1])
+            #print(item['phonetic_list'][0] + item['phonetic_list'][1])
+            word_file.write(item['phonetic_list'][1])
             word_file.write('\t')
         else:
             print('')
