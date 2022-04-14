@@ -6,8 +6,8 @@ import jsonlines
 
 
 word = []
-with open('1.json', 'r',encoding='utf-8') as f:
-    word_file = open("四级英语词汇导出.txt", 'w', encoding='UTF-8')
+with open('商务英语词汇.json', 'r',encoding='utf-8') as f:
+    word_file = open("商务英语词汇导出.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词
