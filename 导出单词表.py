@@ -27,8 +27,8 @@ import jsonlines
 #         word_file.write('\n')
 
 
-with open('TOEFL_2.json', 'r',encoding='utf-8') as f:
-    word_file = open("TOEFL词汇单词表.txt", 'w', encoding='UTF-8')
+with open('KaoYanluan_1.json', 'r',encoding='utf-8') as f:
+    word_file = open("考研必考词汇1341.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词
