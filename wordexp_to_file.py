@@ -6,8 +6,8 @@ import jsonlines
 
 
 word = []
-with open('TOEFL词汇单词表.json', 'r',encoding='utf-8') as f:
-    word_file = open("TOEFL词汇单词表导出1.txt", 'w', encoding='UTF-8')
+with open('高考必备词汇（图片记忆）3668个.json', 'r',encoding='utf-8') as f:
+    word_file = open("高考必备词汇（图片记忆）3668个单词表导出.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词
