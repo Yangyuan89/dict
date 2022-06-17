@@ -27,8 +27,8 @@ import jsonlines
 #         word_file.write('\n')
 
 
-with open('GaoZhongluan_2.json', 'r',encoding='utf-8') as f:
-    word_file = open("高考必备词汇（图片记忆）3668个.txt", 'w', encoding='UTF-8')
+with open('F:\dict\单词列表\人教版初中\PEPChuZhong9_1.json', 'r',encoding='utf-8') as f:
+    word_file = open("F:\dict\单词列表\人教版初中\人教版初中英语-九年级全册551个.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词

@@ -6,8 +6,8 @@ import jsonlines
 
 
 word = []
-with open('高考必备词汇（图片记忆）3668个.json', 'r',encoding='utf-8') as f:
-    word_file = open("高考必备词汇（图片记忆）3668个单词表导出.txt", 'w', encoding='UTF-8')
+with open('F:\dict\单词列表\人教版初中\人教版初中英语-九年级全册551个.json', 'r',encoding='utf-8') as f:
+    word_file = open("F:\dict\单词列表\人教版初中\人教版初中英语-九年级全册551个单词表导出.txt", 'w', encoding='UTF-8')
     for item in jsonlines.Reader(f):
         #print(item)
         #输出单词
